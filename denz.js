@@ -74,27 +74,27 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:デ ニ ス\n'
-            + 'ORG:Owner Dns Bot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285866295942:+62 858-66295-942\n'
+            + 'FN:HANZ ID\n'
+            + 'ORG:Owner Zbot;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6289620676576:+62 896-2067-6576\n'
             + 'END:VCARD'
        
 const vcard1 = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Caca Cans\n'
-            + 'ORG:Co Owner Dns Bot;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285876210829:+62 858-76210-829\n'
+            + 'FN:RAHMY CANZ\n'
+            + 'ORG:Co Owner Zbot;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6285724154826:+62 857-2415-4826\n'
             + 'END:VCARD'
 
-prefix = "#"
-name = "DNS BOT"
-rdaftar = "@denssptraa"
-rmenu = "@denssptraa"
-botinfo = "@denssptraa"
+prefix = "!"
+name = "Zbot"
+rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN Zbot 😁"
+rmenu = "HAI TEMEN Zbot 👋🏻 JANGAN LUPA DONASI YAA:)"
+botinfo = "UNTUK INVITE BOT SILAHKAN DONASI DULU YAA:)"
 limitt = 999999999
-memberLimit = 10
+memberLimit = 2
 ban = []
-premium = ["6285866295942@s.whatsapp.net","6285876210829@s.whatsapp.net"]
+premium = ["6289620676576@s.whatsapp.net","6285724154826@s.whatsapp.net"]
 
 function kyun(seconds){
   function pad(s){
@@ -205,7 +205,7 @@ async function starts() {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const FarhanGans = ["6285866295942@s.whatsapp.net"] // ubah aja gapapa
+			const FarhanGans = ["6289620676576@s.whatsapp.net"] // ubah aja gapapa
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
@@ -249,7 +249,7 @@ async function starts() {
 			}
 
 			const botNumber = denz.user.jid
-			const ownerNumber = ["6285866295942@s.whatsapp.net","6285876210829@s.whataapp.net"] // owner number ubah aja
+			const ownerNumber = ["6289620676576@s.whatsapp.net","6285724154826@s.whataapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await denz.groupMetadata(from) : ''
@@ -746,7 +746,7 @@ contextInfo: {
 }
   }
 denz.sendMessage(from, Menu, text, {
-quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "@denssptraa", "fileSha258": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28888", "height": 1080, "width": 1080, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgASAMBIgACEQEDEQH/xAAvAAADAQEBAQAAAAAAAAAAAAAAAwQCBQEGAQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIQAxAAAAD6QVorDc6qF6znWyTCGuoTmi2duZ0F/PXU9hcO8+cnr8t6UmSnr+sk5lHkrScPzLi2VShydU6bSfWGjqTPt5NVsMoY8WnpSwA0Kg0+5CjN4a3AG//EACMQAQACAgICAgIDAAAAAAAAAAEAAgMREiEEMSJBE2EQM1H/2gAIAQEAAT8ASbSWq7nEam5y71/H5qh7mTyznSnHfJjusycuU5w0+pY3XRCljUy2TqsvRpUZltXgr9TBm54zfuKTPvrjDyNXe5izUs9xsaYdHcz5TfU8rOnX0zxbnx/xIu5dLCal/FHurOGfD7Nkp5FdhbfcedVbu6/Uy15Y+q+o4jKfKsxaL1JexU7lda9zqLuZ/G5gnWpUrxCNqgqmplstAxgrK+JmXvqXoJ3P6n9S3kfQTGr8tTLk+DDk9DHbW9N9pMK0DfsZS3KWsO6xxFaKu5o2MeuyeS3yJw+oZM+HtrsnOlvl6TuXyirueP3jraW6eo2pwRlcVSra7on5vyfEdVPuB6JloY69soVyHFj4WPWzuUSgV+o1jhOrLPLs3a0HpgFTqch9MyK17Zit1+yUv0IzjzBPc//EABsRAAIDAQEBAAAAAAAAAAAAAAABAhARMSHB/9oACAECAQE/ANNrDBrTFUckvGSOjTHpHrHOVsis6NUvt60f/8QAHREAAgMBAAMBAAAAAAAAAAAAAAECESESAxBBcf/aAAgBAwEBPwCsEqYmJRd09HLl00ai7FYoZ8s8kU2mKmvdimyPa/GVGN8t+ntHFfC3g8fqG4zprD//2Q==", "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw==" } } } })
+quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "*_Zbot By Hanz_* *_Recode By Fajar Alfarizi_*", "fileSha258": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28888", "height": 1080, "width": 1080, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgASAMBIgACEQEDEQH/xAAvAAADAQEBAQAAAAAAAAAAAAAAAwQCBQEGAQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIQAxAAAAD6QVorDc6qF6znWyTCGuoTmi2duZ0F/PXU9hcO8+cnr8t6UmSnr+sk5lHkrScPzLi2VShydU6bSfWGjqTPt5NVsMoY8WnpSwA0Kg0+5CjN4a3AG//EACMQAQACAgICAgIDAAAAAAAAAAEAAgMREiEEMSJBE2EQM1H/2gAIAQEAAT8ASbSWq7nEam5y71/H5qh7mTyznSnHfJjusycuU5w0+pY3XRCljUy2TqsvRpUZltXgr9TBm54zfuKTPvrjDyNXe5izUs9xsaYdHcz5TfU8rOnX0zxbnx/xIu5dLCal/FHurOGfD7Nkp5FdhbfcedVbu6/Uy15Y+q+o4jKfKsxaL1JexU7lda9zqLuZ/G5gnWpUrxCNqgqmplstAxgrK+JmXvqXoJ3P6n9S3kfQTGr8tTLk+DDk9DHbW9N9pMK0DfsZS3KWsO6xxFaKu5o2MeuyeS3yJw+oZM+HtrsnOlvl6TuXyirueP3jraW6eo2pwRlcVSra7on5vyfEdVPuB6JloY69soVyHFj4WPWzuUSgV+o1jhOrLPLs3a0HpgFTqch9MyK17Zit1+yUv0IzjzBPc//EABsRAAIDAQEBAAAAAAAAAAAAAAABAhARMSHB/9oACAECAQE/ANNrDBrTFUckvGSOjTHpHrHOVsis6NUvt60f/8QAHREAAgMBAAMBAAAAAAAAAAAAAAECESESAxBBcf/aAAgBAwEBPwCsEqYmJRd09HLl00ai7FYoZ8s8kU2mKmvdimyPa/GVGN8t+ntHFfC3g8fqG4zprD//2Q==", "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw==" } } } })
             break
             case 'zodiak':
 if (args.length < 1) return reply('Masukkan nama zodiak')
@@ -1264,7 +1264,7 @@ quoted: mek, caption: `Wah ganteng kek gua`
 					case 'tahta':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}tahta dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}tahta Zbot`)
 teks = body.slice(7)
 reply(mess.wait)
 ttha = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=${VthearApi}`)
@@ -1274,7 +1274,7 @@ break
 case 'burnpaper':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}burnpaper dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}burnpaper Zbot`)
 todi = body.slice(11)
 reply(mess.wait)
 pper = await getBuffer(`https://videfikri.com/api/textmaker/burnpaper/?text=${todi}`)
@@ -1284,7 +1284,7 @@ break
 case '8bit':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}8bit dns/bot`)
+if (args.length < 1) return reply(`Contoh: ${prefix}8bit Z/bot`)
 ds = `${body.slice(6)}`
 tex1 = ds.split("/")[0];
 tex2 = ds.split("/")[1];
@@ -1296,7 +1296,7 @@ break
 case 'glowneon':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}glowneon dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}glowneon Zbot`)
 tekas = body.slice(10)
 reply(mess.wait)
 glown = await getBuffer(`https://videfikri.com/api/textmaker/glowingneon/?text=${tekas}`)
@@ -1306,7 +1306,7 @@ break
 case 'gsuggest':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}gsuggest dns/bot/wea`)
+if (args.length < 1) return reply(`Contoh: ${prefix}gsuggest Z/bot/wea`)
 du = `${body.slice(10)}`
 ted1 = du.split("/")[0];
 ted2 = du.split("/")[1];
@@ -1319,7 +1319,7 @@ break
 case 'candlemug':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}candlemug dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}candlemug Zbot`)
 ddu = body.slice(11)
 reply(mess.wait)
 clmug = await getBuffer(`https://videfikri.com/api/textmaker/candlemug/?text=${ddu}`)
@@ -1329,7 +1329,7 @@ break
 case 'lovemss':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}lovemss dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}lovemss Zbot`)
 lop = body.slice(9)
 reply(mess.wait)
 lepms = await getBuffer(`https://videfikri.com/api/textmaker/lovemsg/?text=${lop}`)
@@ -1339,7 +1339,7 @@ break
 case 'mugflower':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}mugflower dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}mugflower Zbot`)
 mug = body.slice(11)
 reply(mess.wait)
 mflowg = await getBuffer(`https://videfikri.com/api/textmaker/mugflower/?text=${mug}`)
@@ -1349,7 +1349,7 @@ break
 case 'narutobanner':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}narutobanner dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}narutobanner Zbot`)
 nar = body.slice(14)
 reply(mess.wait)
 narba = await getBuffer(`https://videfikri.com/api/textmaker/narutobanner/?text=${nar}`)
@@ -1359,7 +1359,7 @@ break
 case 'paperglass':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}paperglass dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}paperglass Zbot`)
 papg = body.slice(12)
 reply(mess.wait)
 gelas = await getBuffer(`https://videfikri.com/api/textmaker/paperonglass/?text=${papg}`)
@@ -1369,7 +1369,7 @@ break
 case 'romance':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}romance dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}romance Zbot`)
 roce = body.slice(9)
 reply(mess.wait)
 roma = await getBuffer(`https://videfikri.com/api/textmaker/romancetext/?text=${roce}`)
@@ -1379,7 +1379,7 @@ break
 case 'shadow':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}shadow dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}shadow Zbot`)
 sdow = body.slice(8)
 reply(mess.wait)
 shan = await getBuffer(`https://videfikri.com/api/textmaker/shadowtext/?text=${sdow}`)
@@ -1389,7 +1389,7 @@ break
 case 'glitch':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}glitch dns/bot`)
+if (args.length < 1) return reply(`Contoh: ${prefix}glitch Z/bot`)
 gl = `${body.slice(8)}`
 gel1 = gl.split("/")[0];
 gel2 = gl.split("/")[1];
@@ -1401,7 +1401,7 @@ break
 case 'coffe':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}coffe dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}coffe Zbot`)
 kop = body.slice(7)
 reply(mess.wait)
 ppi = await getBuffer(`https://videfikri.com/api/textmaker/coffeecup/?text=${kop}`)
@@ -1411,7 +1411,7 @@ break
 case 'candy':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}candy dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}candy Zbot`)
 cndy = body.slice(7)
 reply(mess.wait)
 prmen = await getBuffer(`https://videfikri.com/api/textmaker/sweetcandy/?text=${cndy}`)
@@ -1421,7 +1421,7 @@ break
 case 'hpotter':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}hpotter dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}hpotter Zbot`)
 hpter = body.slice(9)
 reply(mess.wait)
 helpter = await getBuffer(`https://videfikri.com/api/textmaker/hpotter/?text=${hpter}`)
@@ -1431,7 +1431,7 @@ break
 case 'woodblock':
 if (isBanned) return reply(mess.only.benned)    
 if (!isUser) return reply(mess.only.userB)
-if (args.length < 1) return reply(`Contoh: ${prefix}woodblock dns`)
+if (args.length < 1) return reply(`Contoh: ${prefix}woodblock Zbot`)
 woblk = body.slice(11)
 reply(mess.wait)
 gblok = await getBuffer(`https://videfikri.com/api/textmaker/woodblock/?text=${woblk}`)
@@ -3006,7 +3006,7 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 DNS BOT 〙═══', members_id, true)
+					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 Z BOT 〙═══', members_id, true)
 					break
 			    case 'mentionall':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -3020,7 +3020,7 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 DNS BOT 〙', members_id, true)
+					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 Z BOT 〙', members_id, true)
 					break
 			    case 'kbbi':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -3067,7 +3067,7 @@ quoted: mek, caption: `Hasil Dari *${daerah}*`
 					for (let _ of anu) {
 						denz.deleteChat(_.jid)
 					}
-					reply(`\`\`\`Sukses delete all chat DNS BOT\`\`\``)
+					reply(`\`\`\`Sukses delete all chat Z BOT\`\`\``)
 					break
                                 case 'bcgc':
 					denz.updatePresence(from, Presence.composing) 
@@ -4161,16 +4161,16 @@ case 'husbu':
 		}, 0)
 		}
 		if (budy.includes(`Thanks`)) {
-                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ᴅɴꜱ ᴍɪꜱꜱ ʏᴏᴜ >-<`)
+                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ZBOT ᴍɪꜱꜱ ʏᴏᴜ >-<`)
                   }
                   if (budy.includes(`Makasih`)) {
-                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ᴅɴꜱ ᴍɪꜱꜱ ʏᴏᴜ >-<`)
+                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ZBOT ᴍɪꜱꜱ ʏᴏᴜ >-<`)
                   }
                   if (budy.includes(`thanks`)) {
-                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ᴅɴꜱ ᴍɪꜱꜱ ʏᴏᴜ >-<`)
+                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ZBOT ᴍɪꜱꜱ ʏᴏᴜ >-<`)
                   }
                   if (budy.includes(`makasih`)) {
-                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ᴅɴꜱ ᴍɪꜱꜱ ʏᴏᴜ >-<`)
+                  reply(`ꜱᴀᴍᴀ-ꜱᴀᴍᴀ ᴋᴀᴋ *${pushname2}*, ZBOT ᴍɪꜱꜱ ʏᴏᴜ >-<`)
                   }
                   if (budy.includes(`Assalamualaikum`)) {
                   reply(`ᴡᴀᴀʟᴀɪᴋᴜᴍꜱᴀʟᴀᴍ ᴋᴀᴋ *${pushname2}*`)
@@ -4190,14 +4190,14 @@ case 'husbu':
                   if (budy.includes(`asalamualaikum`)) {
                   reply(`ᴡᴀᴀʟᴀɪᴋᴜᴍꜱᴀʟᴀᴍ ᴋᴀᴋ *${pushname2}*`)
                   }
-                  if (budy.includes(`DNS`)) {
-                  reply(`ʜᴀʟʟᴏ ᴋᴀᴋ *${pushname2}*, ᴅɴꜱ ᴅɪꜱɪɴɪ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ᴅɪʙᴀɴᴛᴜ? ᴋᴇᴛɪᴋ *${prefix}menu* ʏᴀ ᴋᴀᴋ`)
+                  if (budy.includes(`Zbot`)) {
+                  reply(`ʜᴀʟʟᴏ ᴋᴀᴋ *${pushname2}*, ZBOT ᴅɪꜱɪɴɪ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ᴅɪʙᴀɴᴛᴜ? ᴋᴇᴛɪᴋ *${prefix}menu* ʏᴀ ᴋᴀᴋ`)
                   }
-			      if (budy.includes(`Dns`)) {
-                  reply(`ʜᴀʟʟᴏ ᴋᴀᴋ *${pushname2}*, ᴅɴꜱ ᴅɪꜱɪɴɪ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ᴅɪʙᴀɴᴛᴜ? ᴋᴇᴛɪᴋ *${prefix}menu* ʏᴀ ᴋᴀᴋ`)
+			      if (budy.includes(`ZBOT`)) {
+                  reply(`ʜᴀʟʟᴏ ᴋᴀᴋ *${pushname2}*, ZBOT ᴅɪꜱɪɴɪ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ᴅɪʙᴀɴᴛᴜ? ᴋᴇᴛɪᴋ *${prefix}menu* ʏᴀ ᴋᴀᴋ`)
                   }
-                  if (budy.includes(`dns`)) {
-                  reply(`ʜᴀʟʟᴏ ᴋᴀᴋ *${pushname2}*, ᴅɴꜱ ᴅɪꜱɪɴɪ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ᴅɪʙᴀɴᴛᴜ? ᴋᴇᴛɪᴋ *${prefix}menu* ʏᴀ ᴋᴀᴋ`)
+                  if (budy.includes(`ZBOT`)) {
+                  reply(`ʜᴀʟʟᴏ ᴋᴀᴋ *${pushname2}*, ZBOT ᴅɪꜱɪɴɪ ᴀᴅᴀ ʏᴀɴɢ ʙɪꜱᴀ ᴅɪʙᴀɴᴛᴜ? ᴋᴇᴛɪᴋ *${prefix}menu* ʏᴀ ᴋᴀᴋ`)
                   }
                   if (body.startsWith(`${prefix}${command}`)) {
   reply(`      ────────────────\nʜᴇɪ *${pushname2}* !!!\nᴘᴇʀɪɴᴛᴀʜ/ᴄᴏᴍᴍᴀɴᴅ *${prefix}${command}*\nᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅᴀʟᴀᴍ *${prefix}menu*\n      ────────────────`)
@@ -4208,7 +4208,7 @@ case 'husbu':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[DNSBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
+						console.log(color('[ZBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
