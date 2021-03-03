@@ -3,10 +3,10 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │× ꜱᴘᴀᴍ
 │× ᴛᴇʟᴇᴘᴏɴ
 │ᴍᴇʟᴀɴɢɢᴀʀ? ʙʟᴏᴄᴋ!
-│ᴋᴇᴛɪᴋ #ᴍᴇɴᴜ
+│ᴋᴇᴛɪᴋ ${prefix}ᴍᴇɴᴜ
 │ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ғɪᴛᴜʀ ᴅɴꜱ ʙᴏᴛ
 ┬
-╰──────「 *_ᴅɴꜱʙᴏᴛ_* 」
+╰──────「 *_ZBOT_* 」
 `
 }
 
@@ -26,7 +26,7 @@ function kyun(seconds){
 // info bot 
 const bottt = (prefix) => {
 return `
-*ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ ꜱɪʟᴀʜᴋᴀɴ ɢᴀʙᴜɴɢ ɢʀᴏᴜᴘ ᴅɴꜱ ʙᴏᴛ*
+*ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ ꜱɪʟᴀʜᴋᴀɴ ɢᴀʙᴜɴɢ ɢʀᴏᴜᴘ Zbot*
 
 https://chat.whatsapp.com/Hpwp8FBfJMtHEN5KeuFJKw
 `
